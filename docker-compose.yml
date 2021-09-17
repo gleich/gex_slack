@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  gex_slack:
+    build:
+      context: .
+      dockerfile: docker/dev.Dockerfile
+    volumes:
+      - '.:/usr/src/app'
+    ports:
+      - '80:80'
+    env_file: .env
