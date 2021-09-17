@@ -7,6 +7,7 @@
 ![build](https://github.com/gleich/gex_slack/workflows/build/badge.svg)
 ![test](https://github.com/gleich/gex_slack/workflows/test/badge.svg)
 ![lint](https://github.com/gleich/gex_slack/workflows/lint/badge.svg)
+![deploy](https://github.com/gleich/gex_slack/workflows/deploy/badge.svg)
 
 ## 🙌 Contributing
 
