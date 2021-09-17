@@ -7,15 +7,14 @@
 ![build](https://github.com/gleich/gex_slack/workflows/build/badge.svg)
 ![test](https://github.com/gleich/gex_slack/workflows/test/badge.svg)
 ![lint](https://github.com/gleich/gex_slack/workflows/lint/badge.svg)
-![release](https://github.com/gleich/gex_slack/workflows/release/badge.svg)
 
 ## 🙌 Contributing
 
 Before contributing please read the [CONTRIBUTING.md file](https://github.com/gleich/gex_slack/blob/master/CONTRIBUTING.md).
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-## 👥 Contributors
 
+## 👥 Contributors
 
 - **[@gleich](https://github.com/gleich)**
 
