@@ -1,4 +1,4 @@
-FROM cosmtrek/air:v1.27.3
+FROM golang:1.17
 
 # Meta data:
 LABEL maintainer="email@mattglei.ch"
@@ -8,4 +8,4 @@ LABEL description="🦎 A slack bot for random gex quotes"
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 
-CMD ["air"]
+CMD ["make", "local-test"]
