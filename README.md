@@ -1,19 +1,17 @@
 <!-- DO NOT REMOVE - contributor_list:data:start:["gleich"]:end -->
 
-# Run `init.py`
+# gex_slack
 
-# project_name
+🦎 A slack bot for random gex quotes
 
-project_description
-
-![build](https://github.com/github_username/project_name/workflows/build/badge.svg)
-![test](https://github.com/github_username/project_name/workflows/test/badge.svg)
-![lint](https://github.com/github_username/project_name/workflows/lint/badge.svg)
-![release](https://github.com/github_username/project_name/workflows/release/badge.svg)
+![build](https://github.com/gleich/gex_slack/workflows/build/badge.svg)
+![test](https://github.com/gleich/gex_slack/workflows/test/badge.svg)
+![lint](https://github.com/gleich/gex_slack/workflows/lint/badge.svg)
+![release](https://github.com/gleich/gex_slack/workflows/release/badge.svg)
 
 ## 🙌 Contributing
 
-Before contributing please read the [CONTRIBUTING.md file](https://github.com/gleich/project_name/blob/master/CONTRIBUTING.md).
+Before contributing please read the [CONTRIBUTING.md file](https://github.com/gleich/gex_slack/blob/master/CONTRIBUTING.md).
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 ## 👥 Contributors
