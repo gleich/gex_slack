@@ -1,0 +1,22 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  caprover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Build & Push Image
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u gleich --password-stdin
+          docker build -f docker/Dockerfile -t ghcr.io/gleich/gex_slack .
+          docker push ghcr.io/gleich/gex_slack
+      - name: Deploy to Caprover
+        run: docker run caprover/cli-caprover:v2.1.1 caprover deploy --caproverUrl https://api.mattglei.ch --caproverPassword ${{ secrets.CAPROVER_PASSWORD }} --caproverApp gex-slack --imageName ghcr.io/gleich/gex_slack
