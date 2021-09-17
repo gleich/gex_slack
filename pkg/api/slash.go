@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/gleich/gex_slack/pkg/quotes"
 	"github.com/gleich/lumber"
 	"github.com/slack-go/slack"
 )
@@ -35,7 +36,7 @@ func HandleSlash(w http.ResponseWriter, r *http.Request) {
 
 	switch s.Command {
 	case "/gex":
-		params := &slack.Msg{Text: "testing testing", ResponseType: slack.ResponseTypeInChannel}
+		params := &slack.Msg{Text: quotes.RandomQuote(), ResponseType: slack.ResponseTypeInChannel}
 		b, err := json.Marshal(params)
 		if err != nil {
 			lumber.Error(err, "Failed to marshal json for /gex data")
