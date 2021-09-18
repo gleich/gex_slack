@@ -11,10 +11,8 @@ import (
 	"github.com/slack-go/slack"
 )
 
-var SigningSecret = os.Getenv("SLACK_SIGNING_SECRET")
-
 func HandleSlash(w http.ResponseWriter, r *http.Request) {
-	verifier, err := slack.NewSecretsVerifier(r.Header, SigningSecret)
+	verifier, err := slack.NewSecretsVerifier(r.Header, os.Getenv("SLACK_SIGNING_SECRET"))
 	if err != nil {
 		lumber.Error(err, "Failed to verify secrets")
 		w.WriteHeader(http.StatusInternalServerError)
