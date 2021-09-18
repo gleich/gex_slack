@@ -14,7 +14,6 @@ func SendQuote(channel string) {
 	_, _, err := sl.PostMessage(
 		channel,
 		slack.MsgOptionText(quote, false),
-		slack.MsgOptionAsUser(true),
 	)
 	if err != nil {
 		lumber.Error(err, "Failed to post slack message to channel with id of:", channel)
