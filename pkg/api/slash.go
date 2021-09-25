@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/gleich/gex_slack/pkg/quotes"
-	"github.com/gleich/lumber"
+	"github.com/gleich/lumber/v2"
 	"github.com/slack-go/slack"
 )
 

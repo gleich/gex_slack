@@ -5,12 +5,11 @@ import (
 	"time"
 
 	"github.com/gleich/gex_slack/pkg/api"
-	"github.com/gleich/lumber"
+	"github.com/gleich/lumber/v2"
 	"github.com/go-co-op/gocron"
 )
 
 func main() {
-	lumber.ErrNilCheck = false
 	lumber.Info("Booted Up")
 	http.HandleFunc("/slash", api.HandleSlash)
 
