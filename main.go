@@ -12,6 +12,7 @@ import (
 func main() {
 	lumber.Info("Booted Up")
 	http.HandleFunc("/slash", api.HandleSlash)
+	http.HandleFunc("/", api.HandleRoot)
 
 	lumber.Info("Starting server on port 80")
 	go func() {
