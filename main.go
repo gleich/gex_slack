@@ -24,7 +24,6 @@ func main() {
 	s := gocron.NewScheduler(time.UTC)
 	_, err := s.Every(1).Day().At("19:00").Do(func() {
 		api.SendQuote("C02ERUU1N0K") // # gex-test
-		api.SendQuote("C017M048N4U") // # mattg
 		api.SendQuote("C02EPHVHVNJ") // # gex-quotes
 	})
 	if err != nil {
