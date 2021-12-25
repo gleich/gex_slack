@@ -1,6 +1,7 @@
 package main
 
 import (
+	"math/rand"
 	"net/http"
 	"time"
 
@@ -13,6 +14,7 @@ func main() {
 	lumber.Info("Booted Up")
 	http.HandleFunc("/slash", api.HandleSlash)
 	http.HandleFunc("/", api.HandleRoot)
+	rand.Seed(time.Now().UnixNano())
 
 	lumber.Info("Starting server on port 80")
 	go func() {
